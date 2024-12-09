@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+/* .schedule-detail-body {
+  width: 100%;
+  padding: 20px; 
+} */
+
+.container {
+  top: 10px;
+  padding: 20px;
+  margin: auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 95vw;
+  height: 90vh;
+}
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+  font-size: 30px;
+}
+
+table {
+  width: 100%;
+  /* border-collapse: collapse; */
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+th {
+  background-color: rgba(74, 56, 240, 0.863);
+  color: white;
+  /* border-left: 5px solid rgba(74, 56, 240, 0.863); */
+
+}
+tr {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+tr:hover {
+  background-color: #e9e2e2;
+  border-left: 5px solid rgba(74, 56, 240, 0.863);
+  border-right: 5px solid rgba(74, 56, 240, 0.863);
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  margin: 10px 25px;
+  padding: 3px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 600;
+  color: rgba(55, 37, 221, 0.86);
+}
+
+.pagination button.active {
+  font-weight: 600;
+  font-size: 18px;
+  border: 1px solid rgba(55, 37, 221, 0.86);
+  color: rgba(55, 37, 221, 0.86);
+  background-color: aliceblue;
+  transform: scale(1.2);
+}
+
+.add-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-button button:hover {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 8px 5px rgba(45, 43, 196, 0.5);
+}
+
+.additional-data {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  font-weight: 400;
+  width: 90%;
+  margin: auto;
+}
+.add-data {
+  margin: 8px;
+}
+.add-data-heading{
+  font-weight: 500;
+}
+.additional-data-row{
+  background-color: #e9e2e2;
+}
+
+.receiver-logo{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: solid 1px;
+  text-transform: capitalize;
+  margin-left: 30%;
+  font-size: 15px;
+  /* color: white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.footer{
+  margin-top: 2px;
+  position: sticky;
+  top: 100%;
+}

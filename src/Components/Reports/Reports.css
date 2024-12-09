@@ -1,0 +1,393 @@
+.Report_page {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px;
+}
+
+.report-form {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: auto;
+  padding: 10px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: white;
+  border: 2px solid #3725dddc;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.form_sub_container label {
+  margin-bottom: 5px;
+  
+  width: 25%;
+  font-weight: 500;
+  color: gray;
+  font-size: 16px;
+ 
+}
+
+select {
+  padding: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 35%;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #3725dddc;
+  color: white;
+  width: 10%;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.button:hover {
+  background-color: #3725dddc;
+  color: white;
+}
+
+option {
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 4px;
+}
+
+.Reports_name {
+  background-color: #3725dddc;
+  width: 95%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  color: white;
+  padding: 10px 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.form_main_container {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button_group {
+  width: 100%;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  margin: auto;
+  gap:10px;
+}
+
+
+
+.wide-button {
+  width: auto;
+  background-color: white;
+  color: #3725ddea;
+  font-weight: 500;
+  border: 2px solid #3725dddc;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin: auto;
+}
+tr,td,th{
+  border: 1px solid rgb(94, 92, 92);
+}
+.Report_container{
+  width: 100%;
+
+margin: auto;
+padding: 10px 20px;
+}
+.report_reports{
+  width: 80%;
+}
+.report_thead{
+ width: 80%;
+ height:10vh;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+  color: rgb(71, 70, 70);
+} 
+.report_thead span{
+  font-weight: 400;
+  color:black;
+}
+
+.form_sub_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* flex-direction: column; */
+}
+
+/* Active button styling */
+.button.active {
+  background-color: #3725dddc;
+  color: white;
+}
+
+.button.active.wide-button {
+  background-color: #3725dddc;
+  color: white;
+}
+
+/* Non-active wide button styling */
+.wide-button:not(.active) {
+  background-color: white;
+  color: #3725dddc;
+}
+h2{
+    color: rgb(43, 42, 42);
+    text-align: center;
+    font-size: 20px;
+    
+}
+.info-row-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.company_logo{
+  width: 100px;
+  height: 100px;
+}
+.company_logo img{
+  width: 100%;
+  height: 100%;
+}
+.reports_title {
+  /* position: absolute;
+  right: 20vh;
+  top: 23vh; */
+  /* width: 95%; */
+  /* margin: auto; */
+  display: flex;
+  justify-content: space-evenly;
+  /* padding:20px; */
+  gap: 20px;
+  align-items: center; /* Center buttons vertically */
+}
+
+.report_type {
+  /* background-color: #3725dddc;  */
+  /* color: white;  */
+  background-color: white;
+  color: #3725dddc;
+  border: none; 
+  border-radius: 5px; 
+  padding: 5px 10px;
+  font-size: 16px; 
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+}
+
+/* .report_type:hover {
+  background-color: #2a1cbb; 
+  transform: scale(1.05); 
+} */
+
+.report_type:focus {
+  /* outline: none;  */
+  /* border-bottom: 2px solid #3725dddc; */
+  box-shadow: 0 0 0 3px rgba(235, 235, 238, 0.5);
+  /* border-bottom: 1px solid #3725dddc; */
+}
+.button_group .report_name{
+  font-weight: 600;
+  color:#3725dddc ;
+  
+}
+
+/* Media queries */
+@media (max-width: 1200px) {
+  .form_sub_container label, .form-group {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  .button {
+    width: 20%;
+  }
+
+  .button_group {
+    flex-direction: column;
+  }
+
+  .button_group h1 {
+    margin-bottom: 10px;
+  }
+
+  table {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .Reports_name {
+    width: 100%;
+  }
+
+  .report-form {
+    width: 100%;
+  }
+
+  .form_main_container {
+    padding: 10px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form_sub_container label {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  .button {
+    width: 30%;
+  }
+
+  .button_group {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .wide-button {
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Reports_name {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .form_sub_container {
+    flex-direction: column;
+  }
+
+  .form_sub_container label {
+    font-size: 14px;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .button {
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .button_group h1 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .wide-button {
+    width: 100%;
+    padding: 8px 16px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}
+
+@media print {
+  /* .info-row-container {
+    position: fixed;
+    bottom: 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    z-index: 999;
+    height: 10vh;
+    display: table-header-group;
+  }
+
+  .Report_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:30px;
+  }
+
+  .report_tbody {
+    width: 100%;
+    height: 70vh;
+    padding-top: 10vh;
+    padding-bottom: 18vh;
+    margin-top: vh; 
+    padding-bottom: 20vh; 
+     max-height: 55vh;
+  }
+  .report_thead {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 20vh;
+    display: table-header-group; 
+    z-index: 998;
+  } */
+  
+}

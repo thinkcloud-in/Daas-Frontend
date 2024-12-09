@@ -1,0 +1,240 @@
+{
+    "disable_audio": true,
+    "guacd_port": 1234,
+    "guacd_encryption": "TLS",
+    "guacd_hostname": "guac45d.example.com",
+    "max_connections": 100,
+    "max_connections_per_user": 10,
+    "weight": "high",
+    "failover_only": "yes",
+    "name": "roctftdf54",
+    "protocol": "rdp",
+    "port": 5900,
+    "read_only": false,
+    "swap_red_blue": true,
+    "cursor": true,
+    "color_depth": "24-bit",
+    "clipboard_encoding": "base64",
+    "disable_copy": false,
+    "disable_paste": false,
+    "dest_port": 22,
+    "recording_exclude_output": false,
+    "recording_exclude_mouse": true,
+    "recording_include_keys": true,
+    "create_recording_path": "/path/to/recording",
+    "enable_sftp": true,
+    "sftp_port": 22,
+    "sftp_server_alive_interval": 30,
+    "enable_audio": true,
+    "color_scheme": "dark",
+    "font_size": 12,
+    "scrollback": 1000,
+    "timezone": "UTC",
+    "server_alive_interval": 60,
+    "backspace": "backspace",
+    "terminal_type": "xterm",
+    "create_typescript_path": "/path/to/typescript",
+    "hostname": "example-host",
+    "host_key": "host-key",
+    "private_key": "private-key",
+    "username": "user",
+    "password": "password",
+    "passphrase": "passphrase",
+    "font_name": "Arial",
+    "command": "start",
+    "locale": "en_US",
+    "typescript_path": "/path/to/typescript",
+    "typescript_name": "example",
+    "recording_path": "/path/to/recording",
+    "recording_name": "example",
+    "sftp_root_directory": "/sftp/root",
+    "sftp_directory": "/sftp",
+    "sftp_passphrase": "sftp-passphrase",
+    "sftp_private_key": "sftp-private-key",
+    "sftp_username": "sftp-user",
+    "sftp_password": "sftp-password",
+    "sftp_host_key": "sftp-host-key",
+    "sftp_hostname": "sftp-host",
+    "dest_host": "destination-host",
+    "audio_servername": "audio-server",
+    "kubeconfig": "/path/to/kubeconfig",
+    "namespace": "default",
+    "pod_name": "example-pod",
+    "container_name": "example-container",
+    "args": ["arg1", "arg2"],
+    "tty": true,
+    "stdin": true,
+    "stdin_tty": true,
+    "shell": "/bin/bash",
+    "security": "TLS",
+    "disable_auth": false,
+    "ignore_cert": true,
+    "gateway_port": 8443,
+    "server_layout": "US",
+    "console": true,
+    "width": 1920,
+    "height": 1080,
+    "dpi": 96,
+    "resize_method": "scale",
+    "console_audio": true,
+    "enable_audio_input": true,
+    "enable_printing": false,
+    "enable_drive": true,
+    "create_drive_path": "/path/to/drive",
+    "enable_wallpaper": true,
+    "enable_theming": true,
+    "enable_font_smoothing": true,
+    "enable_full_window_drag": true,
+    "enable_desktop_composition": true,
+    "enable_menu_animations": true,
+    "disable_bitmap_caching": false,
+    "disable_offscreen_caching": false,
+    "disable_glyph_caching": false,
+    "preconnection_id": "preconnection-id",
+    "domain": "example.com",
+    "gateway_hostname": "gateway.example.com",
+    "gateway_username": "gateway-user",
+    "gateway_password": "gateway-password",
+    "gateway_domain": "example-domain",
+    "initial_program": "program",
+    "client_name": "client",
+    "printer_name": "printer",
+    "drive_name": "drive",
+    "drive_path": "/path/to/drive",
+    "static_channels": "1,2,3",
+    "remote_app": "app",
+    "remote_app_dir": "/path/to/app",
+    "remote_app_args": "--arg",
+    "preconnection_blob": "blob",
+    "load_balance_info": "info",
+    "ca_cert": "ca-cert",
+    "login_success_regex": "success",
+    "login_failure_regex": "failure",
+    "attributes_max_connections": 100,
+    "attributes_max_connections_per_user": 10,
+    "attributes_weight": 1,
+    "attributes_failover_only": true,
+    "attributes_guacd_port": 1234,
+    "attributes_guacd_encryption": "TLS",
+    "attributes_guacd_hostname": "attributes-guacd.example.com",
+    "destination_host": "destination-host",
+    "destination_port": 80,
+    "automatically_create_typescript_path": true,
+    "automatically_create_recording_path": true,
+    "exclude_graphics_streams": false,
+    "exclude_mouse": true,
+    "exclude_touch_events": false,
+    "include_key_events": true,
+    "pool_id": 1,
+    "users_assigned": ["user1", "user2"],
+    "date_created": "2024-07-25T00:00:00Z",
+    "identifier": "unique-identifier"
+}
+
+
+
+
+
+  const [addMachine, setAddMachine] = useState({
+    name: "",
+    ip: "",
+    port: null,  // Make sure to input a valid integer when setting this
+    protocol: props.selectedPoolDetails.pool_protocol,
+    pool_id: props.poolId,  // Assuming this comes from props
+    users_assigned: [],
+    guacd_port:props.selectedPoolDetails.pool_guacd_port,  // Initialize as null or a valid integer
+    guacd_encryption: props.selectedPoolDetails.pool_guacd_encryption,  // This should be a string
+    guacd_hostname: props.selectedPoolDetails.pool_guacd_hostname,  // This should be a string
+    weight: props.selectedPoolDetails.pool_weight,  // This should be a string or number, depending on backend requirements
+    failover_only: props.selectedPoolDetails.pool_failover_only,  // Initialize as an empty string if a string is required
+  
+    port: props.selectedPoolDetails.pool_port, 
+    type:props.selectedPoolDetails.pool_type,
+    name: props.selectedPoolDetails.pool_name,
+    entitled: null,
+    machines: [],
+    username: props.selectedPoolDetails.pool_username,
+    password: props.selectedPoolDetails.pool_password,
+    security: props.selectedPoolDetails.pool_security,
+    weight: props.selectedPoolDetails.pool_weight,
+    domain: props.selectedPoolDetails.pool_domain,
+    disable_auth: props.selectedPoolDetails.pool_disable_auth, // Boolean field
+    ignore_cert: props.selectedPoolDetails.pool_ignore_cert, // Boolean field
+    max_connections: props.selectedPoolDetails.pool_max_connections, // Integer field
+    max_connections_per_user: props.selectedPoolDetails.pool_max_connections_per_user, // Integer field
+    
+    gateway_port: props.selectedPoolDetails.pool_gateway_port, // Integer field
+    gateway_username: props.selectedPoolDetails.pool_gateway_username, // String field
+    gateway_password: props.selectedPoolDetails.pool_gateway_password, // String
+    gateway_domain: props.selectedPoolDetails.pool_gateway_domain, // String field
+    initial_program: props.selectedPoolDetails.pool_initial_program, 
+    client_name: props.selectedPoolDetails.pool_client_name,
+    timezone: props.selectedPoolDetails.pool_timezone,
+
+    console: props.selectedPoolDetails.pool_console, // Boolean field
+    width: props.selectedPoolDetails.width, // Integer field
+    height: props.selectedPoolDetails.pool_height, // Integer field
+    dpi: props.selectedPoolDetails.pool_dpi, // Integer field
+    color_depth: props.selectedPoolDetails.pool_color_depth,
+    resize_method: props.selectedPoolDetails.pool_resize_method,
+    read_only: props.selectedPoolDetails.pool_read_only, // Boolean field
+    clipboard_encoding: props.selectedPoolDetails.pool_clipboard_encoding,
+    disable_copy: props.selectedPoolDetails.pool_disable_copy, // Boolean field
+    disable_paste: props.selectedPoolDetails.pool_disable_paste, // Boolean field
+    console_audio: props.selectedPoolDetails.pool_console_audio, // Boolean field
+    custom_disable_audio: props.selectedPoolDetails.pool_custom_disable_audio, // Boolean field
+    enable_audio_input: props.selectedPoolDetails.pool_enable_audio_input, // Boolean field
+    enable_printing: props.selectedPoolDetails.pool_enable_printing, // Boolean field
+    printer_name: props.selectedPoolDetails.pool_printer_name, // String
+    enable_drive: props.selectedPoolDetails.pool_enable_drive, // Boolean field
+    drive_name: props.selectedPoolDetails.pool_drive_name,
+    drive_path: props.selectedPoolDetails.pool_drive_path,
+    cursor: props.selectedPoolDetails.pool_cursor,
+    enable_wallpaper: props.selectedPoolDetails.pool_enable_wallpaper, // Boolean field
+    enable_theming: props.selectedPoolDetails.pool_enable_theming, // Boolean field
+    enable_font_smoothing: props.selectedPoolDetails.pool_enable_font_smoothing, // Boolean field
+    enable_full_window_drag: props.selectedPoolDetails.pool_enable_full_window_drag, // Boolean field
+    enable_desktop_composition: props.selectedPoolDetails.pool_enable_desktop_composition, // Boolean field
+    enable_menu_animations: props.selectedPoolDetails.pool_enable_menu_animations, // Boolean field
+    disable_bitmap_caching:props.selectedPoolDetails.pool_disable_bitmap_caching, // Boolean field
+    disable_offscreen_caching: props.selectedPoolDetails.pool_disable_offscreen_caching, // Boolean field
+    disable_glyph_caching: props.selectedPoolDetails.pool_disable_glyph_caching, // Boolean field
+    load_balance_info: props.selectedPoolDetails.pool_load_balance_info,
+    recording_path: props.selectedPoolDetails.pool_recording_path,
+    recording_name: props.selectedPoolDetails.pool_recording_name,
+    create_recording_path: props.selectedPoolDetails.pool_create_recording_path, // Boolean field
+    recording_exclude_mouse: props.selectedPoolDetails.pool_recording_exclude_mouse, // Boolean field
+    recording_include_keys: props.selectedPoolDetails.pool_recording_include_keys, // Boolean field
+    exclude_touch_events: props.selectedPoolDetails.pool_exclude_touch_events, // Boolean field
+    enable_sftp: props.selectedPoolDetails.pool_enable_sftp, // Boolean field
+    sftp_port: props.selectedPoolDetails.pool_sftp_port, // Integer field
+    sftp_username: props.selectedPoolDetails.pool_sftp_username,
+    font_name: props.selectedPoolDetails.pool_font_name,
+    sftp_password: props.selectedPoolDetails.pool_sftp_password,
+    sftp_host_key: props.selectedPoolDetails.pool_sftp_host_key,
+    sftp_private_key: props.selectedPoolDetails.pool_sftp_private_key,
+    sftp_passphrase: props.selectedPoolDetails.pool_sftp_passphrase,
+    sftp_root_directory: props.selectedPoolDetails.pool_sftp_root_directory,
+    sftp_directory: props.selectedPoolDetails.pool_sftp_directory,
+    sftp_server_alive_interval: props.selectedPoolDetails.pool_sftp_server_alive_interval, // Integer field
+    private_key: props.selectedPoolDetails.pool_private_key,
+    passphrase: props.selectedPoolDetails.pool_passphrase,
+    color_scheme: props.selectedPoolDetails.pool_color_scheme,
+    custom_font_name: props.selectedPoolDetails.pool_custom_font_name,
+    scrollback: props.selectedPoolDetails.pool_, // Integer field
+    font_size: props.selectedPoolDetails.pool_font_size, // Integer field
+    backspace: props.selectedPoolDetails.pool_backspace,
+    terminal_type: props.selectedPoolDetails.pool_terminal_type,
+    typescript_path:props.selectedPoolDetails.pool_typescript_path,
+    typescript_name: props.selectedPoolDetails.pool_typescript_name,
+    create_typescript_path: props.selectedPoolDetails.pool_create_typescript_path, // Boolean field
+    swap_red_blue: props.selectedPoolDetails.pool_swap_red_blue, // Boolean field
+    destination_host:props.selectedPoolDetails.pool_destination_host,
+    destination_port: props.selectedPoolDetails.pool_destination_port, // Integer field
+    exclude_mouse: props.selectedPoolDetails.pool_exclude_mouse, // Boolean field
+    exclude_graphics_streams: props.selectedPoolDetails.pool_exclude_graphics_streams, // Boolean field
+    enable_audio: props.selectedPoolDetails.pool_enable_audio, // Boolean field
+    audio_servername: props.selectedPoolDetails.pool_audio_servername,
+    failover_only: props.selectedPoolDetails.pool_failover_only, // Boolean field
+    args: [],
+});

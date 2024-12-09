@@ -1,0 +1,291 @@
+/* .form-container {
+    width: 100%;
+    padding-top: 20px;
+   
+}
+.edit_connection {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 800px;
+    margin-left: 30px;
+  }
+  
+  .edit_connection h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .edit_connection .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .edit_connection label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .edit_connection input,
+  .edit_connection select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .edit_connection input:focus,
+  .edit_connection select:focus {
+    border-color: #3725dddc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(55, 37, 221, 0.5);
+  }
+  .edit_connection .checkbox{
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .concurrency_limits {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 800px;
+    margin-left: 30px;
+    
+  }
+  
+  .concurrency_limits h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .concurrency_limits .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .concurrency_limits label {
+   
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .concurrency_limits input {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .concurrency_limits input:focus {
+    border-color: #3725dddc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(55, 37, 221, 0.5);
+  }
+  
+  .concurrency_limits input[readonly] {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+  }
+  .load_balancing {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 800px;
+    margin-left: 30px;
+   
+  }
+  
+  .load_balancing h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .load_balancing .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .load_balancing label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    
+  }
+  .load_balancing input[type="text"]{
+    width: 50%;
+  }
+  .load_balancing input[type="text"],
+  .load_balancing input[type="checkbox"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .load_balancing .checkbox {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .load_balancing input[type="text"]:focus,
+  .load_balancing input[type="checkbox"]:focus {
+    border-color: #3725dddc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(55, 37, 221, 0.5);
+  }
+  
+  .load_balancing input[type="checkbox"] {
+    
+    margin-top: 10px;
+  }
+  .guacamole_proxy {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 800px;
+   
+    margin-left: 30px;
+  }
+  
+  .guacamole_proxy h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .guacamole_proxy .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .guacamole_proxy label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .guacamole_proxy input[type="number"],
+  .guacamole_proxy select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .guacamole_proxy input[type="number"]:focus,
+  .guacamole_proxy select:focus {
+    border-color: #3725dddc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(55, 37, 221, 0.5);
+  }
+  
+  .parameters {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 800px;
+    margin-left: 30px;
+   
+  }
+  
+  .parameters h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: 600;
+  }
+  
+  .parameters h3 {
+    font-size: 16px;
+   
+    text-align: left;
+    font-weight: 500;
+  }
+  
+  .parameters .form-group {
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .parameters label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .parameters .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .parameters input[type="text"],
+  .parameters input[type="number"],
+  .parameters input[type="password"],
+  .parameters select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .parameters input[type="checkbox"] {
+    margin-right: 10px;
+   
+  }
+  .parameters .checkbox{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .parameters input[type="text"]:focus,
+  .parameters input[type="password"]:focus,
+  .parameters input[type="number"]:focus,
+
+  .parameters select:focus {
+    border-color: #3725dddc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(55, 37, 221, 0.5);
+  }
+  
+  .parameters .network,
+  .parameters .authentication,
+  .parameters .display,
+  .parameters .clipboard,
+  .parameters .vnc_repeater,
+  .parameters .screen_recording,
+  .parameters .sftp,
+  .parameters .audio,
+  .parameters .wake_on_lan ,
+  .parameters .typescript,
+  .parameters .others
+  {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+   
+    
+  }
+  
+
+.form-group{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.form-group label {
+    width: 30%;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: gray;
+    text-align: left;
+} */

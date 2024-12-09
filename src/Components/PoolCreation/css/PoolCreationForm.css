@@ -1,0 +1,56 @@
+
+.pool-creation-form>div{
+    min-width: 550px;
+    /* width: 100%; */
+    /* font-family: 'Georgia', serif; */
+    /* font-family: 'Brush Script MT', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Fira Code', monospace; */
+    /* font-family: 'Cambria', Cochin, Georgia, serif; */
+    font-family: 'Lato', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+   
+  
+}
+.tr{
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+}
+.th{
+    width:  50%;
+    flex-basis: 250px;
+    margin-right: 10px;
+}
+.td{
+    width:  100%;
+    flex-basis: 240px;
+    
+}
+h2,h3{
+    text-align: start;
+    margin: 0px 0px 10px 0px;
+}
+.pool_creation{
+    font-family: 'Lato', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+.pool_creation select{
+    width: 40rem;
+   
+  }
+.pool_creation input[type="text"]{
+    width: 40rem;
+
+  }
+.pool_creation input[type="number"]{
+    width:40rem;
+}
+.pool_creation input[type="password"]{
+    width: 40rem;
+}
+.loading_editpool{
+    width: 100px;
+    height: 100px;
+    
+}

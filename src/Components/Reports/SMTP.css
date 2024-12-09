@@ -1,0 +1,51 @@
+.form-body-smtp{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid rgba(55, 37, 221, 0.86);
+    
+  
+  }
+.smtp-body{
+    margin: auto;
+    height: 70vh;
+    width: 55vw;
+    display: flex;
+    justify-content: center;
+}
+.smtp-body form{
+    margin-top: 2%;
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 1px rgba(55, 37, 221, 0.16);
+    border-radius: 15px;
+}
+.smtp-body form button{
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgba(55, 37, 221, 0.86);
+}
+
+
+.confirm-smtp{
+    display: flex;
+    justify-content: center;
+    padding: 10px 5px;
+    width: 20%;
+    margin-left: 10%;
+    margin-top: 2%;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.test-email-box{
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-button{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-button Button:hover{
+    background-color: rgba(55, 37, 221, 0.86);
+
+}

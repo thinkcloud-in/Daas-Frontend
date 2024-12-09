@@ -1,0 +1,19 @@
+.tr{
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+}
+.th{
+    width:  50%;
+    flex-basis: 250px;
+    margin-right: 10px;
+}
+.td{
+    width:  100%;
+    flex-basis: 240px;
+    
+}
+h2,h3{
+    text-align: start;
+    margin: 0px 0px 10px 0px;
+}
